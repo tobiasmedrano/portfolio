@@ -13,7 +13,6 @@ function Cards({ nombre, descripcion, imagen, url }) {
         <Card.Text>{mostrarMas && descripcion}</Card.Text>
         <div className="d-flex gap-2">
           <Button
-            variant="primary"
             className="btn-proyecto"
             href={url}
             target="_blank"
@@ -22,7 +21,6 @@ function Cards({ nombre, descripcion, imagen, url }) {
             Ver Proyecto
           </Button>
           <Button
-            variant="outline-light"
             className="btn-proyecto-outline"
             onClick={() => setMostrarMas(!mostrarMas)}
           >

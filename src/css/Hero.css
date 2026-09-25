@@ -1,95 +1,94 @@
 /* ===== Hero ===== */
 .hero-section {
   background: #2E3640;
-  color: #e8edf7;
-  padding: 80px 16px;
+  color: #E8EDF7;
+  padding: 110px 24px;
 }
-.hero-section::before,
-.hero-section::after { display: none; }
 
-/* Tarjeta */
 .hero-section > .container {
   max-width: 1000px;
-  padding: 48px 40px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-/* Saludo como etiqueta */
+/* Columna de texto: misma regla de acento que "Sobre mí" y "Contacto" */
+.hero-section .col-md-6:first-child {
+  padding-left: 28px;
+  border-left: 2px solid rgba(232, 163, 94, 0.45);
+}
+
+/* Saludo como kicker, no como pill */
 .hero-section p {
-  display: inline-block;
-  margin-bottom: 20px;
-  padding: 6px 16px;
-  font-size: 0.9rem;
-  color: #9db4ff;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 99px;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #E8A35E;
+  margin-bottom: 18px;
 }
 
-/* Título con subrayado degradé */
 .hero-section h1 {
-  font-weight: 800;
-  font-size: clamp(1.9rem, 4vw, 2.8rem);
-  line-height: 1.15;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  line-height: 1.25;
   letter-spacing: -0.01em;
-  margin: 0 0 32px;
-}
-.hero-section h1::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 4px;
-  margin-top: 18px;
-  border-radius: 99px;
-  background: linear-gradient(90deg, #8fa8ff, #5eead4);
+  color: #E8EDF7;
+  margin: 0 0 36px;
+  max-width: 20ch;
 }
 
-/* Botones */
+/* Botones: mismo lenguaje que .btn-proyecto / .btn-proyecto-outline */
 .botones-hero {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 28px;
+  align-items: center;
 }
-.botones-hero .btn {
-  padding: 12px 26px;
-  font-weight: 600;
-  border-radius: 12px;
-  color: #e8edf7;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
-}
+
 .botones-hero .btn:first-child {
-  background: #7c9cff;
-  border-color: #7c9cff;
-  color: #2E3640;
+  background-color: #E8A35E;
+  border: none;
+  color: #1C2128;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
 }
-.botones-hero .btn:hover {
-  transform: translateY(-4px);
-  background: #7c9cff;
-  border-color: #7c9cff;
-  color: #2E3640;
-}
-.botones-hero .btn:first-child:hover { background: #9db4ff; border-color: #9db4ff; }
-.botones-hero .btn:focus-visible { outline: 3px solid #9db4ff; outline-offset: 3px; }
 
-/* Foto */
-.hero-foto {
-  max-height: 380px;
-  width: auto;
-  object-fit: cover;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.04), 0 16px 40px rgba(0, 0, 0, 0.35);
-  transition: transform 0.3s;
+.botones-hero .btn:first-child:hover {
+  background-color: #F2B978;
+  color: #1C2128;
 }
-.hero-foto:hover { transform: scale(1.02); }
 
-@media (max-width: 767px) {
-  .hero-section { padding: 48px 16px; }
-  .hero-section > .container { padding: 32px 20px; }
-  .hero-foto { max-height: 320px; }
+.botones-hero .btn:last-child {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: #C3CCDE;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.6rem 0;
 }
+
+.botones-hero .btn:last-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 1px;
+  background: #E8A35E;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.botones-hero .btn:last-child:hover {
+  color: #E8EDF7;
+}
+.botones-hero .btn:last-child:hover::after {
+  transform: scaleX(1);
+}
+
+/* Foto: marco desplazado en vez de

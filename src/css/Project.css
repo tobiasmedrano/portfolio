@@ -1,93 +1,71 @@
 /* ===== Proyectos ===== */
 .proyectos-section {
   background: #0f1729;
-  color: #e8edf7;
-  padding: 80px 16px;
+  color: #E8EDF7;
+  padding: 100px 24px;
 }
+
 .proyectos-section h3 {
-  font-weight: 800;
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  margin: 0 0 32px;
-}
-.proyectos-section h3::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 4px;
-  margin: 18px auto 0;
-  border-radius: 99px;
-  background: linear-gradient(90deg, #8fa8ff, #5eead4);
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.15rem;
+  color: #E8A35E;
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding-left: 28px;
+  border-left: 2px solid rgba(232, 163, 94, 0.45);
 }
 
 .proyectos-grid {
-  max-width: 640px;
+  max-width: 900px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
 }
 
-.tarjeta-proyecto {
-  width: 100% !important;
-  background: rgba(255, 255, 255, 0.04) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
-  border-radius: 16px !important;
-  overflow: hidden;
-  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s, border-color 0.2s;
-}
-.tarjeta-proyecto:hover {
-  transform: translateY(-6px);
-  border-color: #7c9cff !important;
-}
-
-.tarjeta-proyecto .card-img-top {
-  height: 130px;
+/* Solo dimensiona la imagen dentro del grid para que las tarjetas queden parejas;
+   no toca color, borde ni radio — eso ya lo define .tarjeta-proyecto */
+.proyectos-grid .card-img-top {
+  height: 180px;
   object-fit: cover;
 }
 
-.tarjeta-proyecto .card-body { padding: 16px; }
-
-.tarjeta-proyecto .card-title {
-  color: #e8edf7;
-  font-weight: 700;
-  font-size: 1.05rem;
-}
-
-.tarjeta-proyecto .card-text {
-  color: #c9d4ea;
-  font-size: 0.9rem;
-  min-height: 1.4em;
-}
-
-.btn-proyecto,
-.btn-proyecto-outline {
-  font-size: 0.85rem;
-  padding: 6px 14px;
-}
-
 .btn-proyecto {
-  background: #7c9cff !important;
-  border-color: #7c9cff !important;
-  color: #0f1729 !important;
+  background-color: #C9A227;
+  border: none;
+  color: black;
+  font-family: 'Manrope', sans-serif;
   font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.3rem;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
 }
-.btn-proyecto:hover {
-  background: #9db4ff !important;
-  border-color: #9db4ff !important;
+
+.btn-proyecto:hover,
+.btn-proyecto:focus {
+  background-color: #E0B93A;
+  color: #1C2128;
 }
 
 .btn-proyecto-outline {
-  border-color: rgba(255, 255, 255, 0.35) !important;
-  color: #e8edf7 !important;
-  font-weight: 600;
-}
-.btn-proyecto-outline:hover {
-  background: rgba(255, 255, 255, 0.12) !important;
-  border-color: #e8edf7 !important;
+  background: #0f1729;
+  border: none;
+  color: #A9B2BD; /* antes #A9B2BD — más claro, más contraste contra el fondo de la tarjeta */
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 0.85rem;
+  padding: 0.55rem 0.4rem;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-@media (max-width: 575px) {
-  .proyectos-section { padding: 56px 16px; }
-  .proyectos-grid { grid-template-columns: 1fr; max-width: 320px; }
+.btn-proyecto-outline:hover,
+.btn-proyecto-outline:focus {
+  color: black;
+  text-decoration-color: #C9A227;
+  background: transparent;
 }
