@@ -1,0 +1,55 @@
+/* ===== Habilidades ===== */
+.habilidades-section {
+  background: #2E3640;
+  color: #e8edf7;
+  padding: 80px 16px;
+  text-align: center;
+}
+
+.habilidades-section h3 {
+  font-weight: 800;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin: 0 0 32px;
+}
+.habilidades-section h3::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin: 18px auto 0;
+  border-radius: 99px;
+  background: linear-gradient(90deg, #8fa8ff, #5eead4);
+}
+
+.habilidades-section p {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 140px;
+  margin: 0 10px 20px;
+  padding: 24px 16px;
+  font-weight: 600;
+  color: #e8edf7;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, border-color 0.2s;
+  vertical-align: top;
+}
+.habilidades-section p:hover {
+  transform: translateY(-6px);
+  border-color: #7c9cff;
+}
+
+.habilidades-section p img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+@media (max-width: 575px) {
+  .habilidades-section { padding: 56px 16px; }
+  .habilidades-section p { width: 110px; padding: 18px 12px; }
+}

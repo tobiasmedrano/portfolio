@@ -1,16 +1,31 @@
-# React + Vite
+TP1 – Mi Portfolio en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Alumno: Tobias Medrano Tomsic Materia: Programación 4 – UTN FRT
 
-Currently, two official plugins are available:
+Descripción del proyecto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Portfolio personal de una sola página, desarrollado con React y Vite. Presenta mi perfil, mis habilidades técnicas y mis proyectos, dividido en componentes reutilizables que se comunican mediante props, con renderizado dinámico a partir de arrays y estado local para mostrar u ocultar contenido.
 
-## React Compiler
+Tecnologías utilizadas
+- React
+- Vite
+- React Bootstrap
+- JavaScript (JSX)
+- CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+# Instalación de dependencias
+npm create vite@latest
+npm install react-icons --save
+npm install react-bootstrap bootstrap
+npm run dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Luego abrir en el navegador la URL que muestra la terminal (normalmente http://localhost:5173).
+
+# Repositorio
+
+https://github.com/tobiasmedrano/TU-REPOSITORIO-AQUI
+
+# Versión publicada
+
+https://portfolio-tobiasmedrano.netlify.app/
