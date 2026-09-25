@@ -1,0 +1,67 @@
+/* ===== Header ===== */
+html { scroll-padding-top: 84px; }
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+/* !important porque bg="dark" de Bootstrap también lo usa */
+.sidebar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  padding: 12px 0;
+  background: linear-gradient(90deg, #2E3640 0%, #0f1729 100%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.sidebar .header-content {
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+}
+
+/* Logo */
+.sidebar .logo {
+  height: 44px;
+  width: auto;
+  border-radius: 10px;
+  transition: transform 0.25s, filter 0.25s;
+}
+.sidebar .logo:hover {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 10px rgba(143, 168, 255, 0.55));
+}
+
+/* Enlaces */
+.header-nav {
+  flex-direction: row;
+  gap: 8px;
+}
+.header-nav .nav-link {
+  padding: 8px 18px;
+  font-weight: 600;
+  color: #c9d4ea;
+  border: 1px solid transparent;
+  border-radius: 99px;
+  transition: transform 0.2s, background 0.2s, color 0.2s, border-color 0.2s;
+}
+.header-nav .nav-link:hover {
+  transform: translateY(-2px);
+  background: #7c9cff;
+  border-color: #7c9cff;
+  color: #2E3640;
+}
+.header-nav .nav-link:focus-visible {
+  outline: 3px solid #9db4ff;
+  outline-offset: 2px;
+}
+
+@media (max-width: 575px) {
+  .sidebar .header-content { justify-content: center; }
+  .header-nav { flex-wrap: wrap; justify-content: center; }
+  .header-nav .nav-link { padding: 6px 14px; font-size: 0.95rem; }
+}
