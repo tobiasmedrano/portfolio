@@ -3,8 +3,8 @@ import "../css/Project.css";
 
 function Projects({ proyectos }) {
   return (
-    <div id="proyecto" className="proyectos-section">
-      <h3 className="text-center mt-4">Proyectos</h3>
+    <div className="proyectos-section">
+      <h3 className="text-center mt-4" id="proyecto" >Proyectos</h3>
       <div className="proyectos-grid">
         {proyectos.map((proyecto) => (
           <ProjectCard

@@ -15,8 +15,8 @@ const Hero = ({ nombre, profesion }) => {
               Mi nombre es {nombre} y actualmente soy {profesion}
             </h1>
        <div className="botones-hero">
-          <Nav.Link className='btn btn-outline-light' href="#inicio">
-            Inicio
+          <Nav.Link className='btn btn-outline-light' href="#proyecto">
+            Proyectos
           </Nav.Link>
           <Nav.Link className='btn btn-outline-light' href="#contacto">
             Contactar
