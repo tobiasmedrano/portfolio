@@ -2,6 +2,7 @@ import '../css/Hero.css'
 import Container from 'react-bootstrap/esm/Container'
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Nav from "react-bootstrap/Nav";
 
 const Hero = ({ nombre, profesion }) => {
   return (
@@ -14,12 +15,12 @@ const Hero = ({ nombre, profesion }) => {
               Mi nombre es {nombre} y actualmente soy {profesion}
             </h1>
        <div className="botones-hero">
-          <button type="button" className="btn btn-outline-light link">
-            Ver Proyectos
-          </button>
-          <button type="button" className="btn btn-outline-light link">
+          <Nav.Link className='btn btn-outline-light' href="#inicio">
+            Inicio
+          </Nav.Link>
+          <Nav.Link className='btn btn-outline-light' href="#contacto">
             Contactar
-          </button>
+          </Nav.Link>
        </div>
           </Col>
 
