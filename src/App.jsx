@@ -6,9 +6,9 @@ import Footer from './components/Footer';
 // Importación de Páginas
 import Home from './pages/Home';
 import About from './pages/About';
-import Skills from './pages/SkillPage';
-import Projects from './pages/ProjectsPage';
-import Contact from './pages/ContactPage';
+import SkillPage from './pages/SkillPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
 
 import './css/Header.css'; // Mantiene estilos globales y de scroll si los usas
 
@@ -26,9 +26,9 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home perfil={perfil} />} />
               <Route path="/SobreMi" element={<About perfil={perfil} />} />
-              <Route path="/Habilidades" element={<Skills habilidades={habilidades} />} />
-              <Route path="/Proyectos" element={<Projects proyectos={proyectos} />} />
-              <Route path="/Contacto" element={<Contact />} />
+              <Route path="/Habilidades" element={<SkillPage habilidades={habilidades} />} />
+              <Route path="/Proyectos" element={<ProjectsPage proyectos={proyectos} />} />
+              <Route path="/Contacto" element={<ContactPage />} />
             </Routes>
           </div>
           <Footer />
