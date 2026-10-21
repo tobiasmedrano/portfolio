@@ -1,12 +1,18 @@
 /* ===== Contacto ===== */
 .contacto-section {
-  background: #2E3640;
+  background: transparent; /* Quitamos el fondo en caja */
   color: #E8EDF7;
-  padding: 100px 24px;
+  padding: 60px 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
 .contacto-card {
-  max-width: 480px;
+  width: 100%;
+  max-width: 500px; /* Ancho máximo ideal para el formulario */
   margin: 0 auto;
   padding-left: 28px;
   border-left: 2px solid rgba(232, 163, 94, 0.45);
@@ -16,7 +22,7 @@
   font-family: 'Fraunces', serif;
   font-style: italic;
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: #E8A35E;
   text-align: left;
   margin: 0 0 32px;
@@ -31,7 +37,7 @@
 }
 
 .contacto-card .form-control {
-  background: transparent !important;
+  background: rgba(255, 255, 255, 0.03) !important;
   border: none !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18) !important;
   border-radius: 0;
@@ -61,6 +67,7 @@
   letter-spacing: 0.02em;
   padding: 10px 0;
   margin-top: 8px;
+  cursor: pointer;
 }
 
 .contacto-card .btn::after {

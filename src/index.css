@@ -1,0 +1,56 @@
+/* Layout Principal */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: #0f1729;
+  color: #E8EDF7;
+}
+
+/* Sidebar fijo a la izquierda */
+.asidebar-container {
+  width: 260px;
+  min-width: 240px;
+  background: #151d30;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 40px 24px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+/* Área principal: Forzamos el centrado absoluto de su contenido */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente cualquier sección hija */
+  justify-content: center; /* Centra verticalmente */
+  padding: 40px;
+  min-width: 0;
+}
+
+/* Hacemos que los contenedores internos de las páginas se centren y tengan un ancho prolijo */
+.home-page,
+.about-page,
+.skills-page,
+.projects-page,
+.contact-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Ancho máximo uniforme para las tarjetas/formularios */
+.hero-section,
+.proyectos-section,
+.habilidades-section,
+.contacto-section,
+.aboutme {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
