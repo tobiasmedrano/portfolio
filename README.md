@@ -18,6 +18,7 @@ Tecnologías utilizadas
 npm create vite@latest
 npm install react-icons --save
 npm install react-bootstrap bootstrap
+npm install react-router-dom
 npm run dev
 
 Luego abrir en el navegador la URL que muestra la terminal (normalmente http://localhost:5173).
