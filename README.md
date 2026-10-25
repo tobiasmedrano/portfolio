@@ -25,8 +25,8 @@ Luego abrir en el navegador la URL que muestra la terminal (normalmente http://l
 
 # Repositorio
 
-https://github.com/tobiasmedrano/TU-REPOSITORIO-AQUI
+https://github.com/tobiasmedrano/portfolio
 
 # Versión publicada
 
-https://portfolio-tobiasmedrano.netlify.app/
+https://portfolio-tobiasmedrano.vercel.app/
